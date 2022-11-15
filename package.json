@@ -2,21 +2,30 @@
   "name": "@tamtam-chat/rollup-plugins",
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/rollup-plugins.js",
+  "main": "./dist/rollup-plugins.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "scripts": {
-    "build": "vite build && tsc"
+    "build": "rollup -c",
+    "watch": "rollup -wc"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
     "@types/node": "^18.11.9",
     "rollup": "^2.79.1",
-    "typescript": "^4.8.4",
-    "vite": "^3.2.3"
+    "tslib": "^2.4.1",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.2",
+    "@rollup/pluginutils": "^4.2.1",
     "acorn": "^8.8.1",
     "magic-string": "^0.26.7",
-    "regexpu-core": "^5.2.2"
+    "regexpu-core": "^5.2.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"

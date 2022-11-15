@@ -1,6 +1,7 @@
 import { Parser } from 'acorn';
 import MagicString from 'magic-string';
-import rewritePattern from 'regexpu-core';
+
+const rewritePattern = require('regexpu-core');
 
 // used for debugging, without the noise created by
 // circular references

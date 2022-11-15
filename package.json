@@ -1,0 +1,36 @@
+{
+  "name": "@tamtam-chat/rollup-plugins",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/rollup-plugins.js",
+  "scripts": {
+    "build": "vite build && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "rollup": "^2.79.1",
+    "typescript": "^4.8.4",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.0.2",
+    "acorn": "^8.8.1",
+    "magic-string": "^0.26.7",
+    "regexpu-core": "^5.2.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamtam-chat/rollup-plugins.git"
+  },
+  "keywords": [],
+  "author": "Sergey Chikuyonok <serge.che@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tamtam-chat/rollup-plugins/issues"
+  },
+  "homepage": "https://github.com/tamtam-chat/rollup-plugins#readme",
+  "description": ""
+}

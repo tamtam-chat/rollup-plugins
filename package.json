@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -wc"
+    "watch": "rollup -wc",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",

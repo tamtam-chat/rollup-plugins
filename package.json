@@ -1,6 +1,6 @@
 {
   "name": "@tamtam-chat/rollup-plugins",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/rollup-plugins.cjs",
   "types": "./dist/index.d.ts",
